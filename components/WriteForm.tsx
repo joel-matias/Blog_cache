@@ -30,39 +30,46 @@ export default function WriteForm() {
   }
 
   return (
-    <>
-      <form onSubmit={handleSubmit} className="form">
-        <label>
-          Emoticon
-          <div className="emoticons">
-            {EMOTICONS.map((em) => (
-              <button
-                key={em}
-                type="button"
-                className={emoticon === em ? 'selected' : ''}
-                onClick={() => setEmoticon(em)}
-              >
-                {em}
-              </button>
-            ))}
-          </div>
-        </label>
-        <label>
-          Entrada
-          <textarea
-            value={content}
-            onChange={(e) => setContent(e.target.value)}
-            required
-            rows={4}
-          />
-        </label>
-        {status === 'ok' && <p className="ok">Entrada publicada.</p>}
-        {status === 'error' && <p className="error">Error al publicar.</p>}
-        <button type="submit">Publicar</button>
-      </form>
-      <button className="btn-secondary" onClick={handleLogout}>
-        Cerrar sesion
-      </button>
-    </>
+    <form onSubmit={handleSubmit} className="flex flex-col gap-4 my-6">
+      <label className="flex flex-col gap-1 text-sm">
+        Emoticon
+        <div className="flex gap-2 flex-wrap">
+          {EMOTICONS.map((em) => (
+            <button
+              key={em}
+              type="button"
+              className={
+                emoticon === em
+                  ? 'py-1 px-3 border border-gray-700 bg-gray-100 font-bold cursor-pointer font-mono'
+                  : 'py-1 px-3 border border-gray-300 bg-white cursor-pointer font-mono'
+              }
+              onClick={() => setEmoticon(em)}
+            >
+              {em}
+            </button>
+          ))}
+        </div>
+      </label>
+      <label className="flex flex-col gap-1 text-sm">
+        Entrada
+        <textarea
+          value={content}
+          onChange={(e) => setContent(e.target.value)}
+          required
+          rows={4}
+          className="p-2 border border-gray-300 w-full bg-white focus:outline-none focus:border-gray-600"
+        />
+      </label>
+      {status === 'ok' && <p className="text-green-700 text-sm">Entrada publicada.</p>}
+      {status === 'error' && <p className="text-red-700 text-sm">Error al publicar.</p>}
+      <div className="flex gap-3 items-center">
+        <button type="submit" className="px-6 py-2 bg-gray-800 text-white cursor-pointer hover:bg-gray-600">
+          Publicar
+        </button>
+        <button type="button" className="px-4 py-2 bg-white border border-gray-300 cursor-pointer hover:bg-gray-100" onClick={handleLogout}>
+          Cerrar sesion
+        </button>
+      </div>
+    </form>
   );
 }
