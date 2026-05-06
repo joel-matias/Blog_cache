@@ -18,7 +18,7 @@ export default function LoginPage() {
       body: JSON.stringify({ username, password }),
     });
     if (res.ok) {
-      router.push('/write');
+      router.push('/entrada');
     } else {
       const data = await res.json();
       setError(data.error || 'Error al iniciar sesion');
@@ -26,19 +26,20 @@ export default function LoginPage() {
   }
 
   return (
-    <main className="page">
+    <main className="max-w-2xl mx-auto mt-8 px-4">
       <h1>Iniciar sesion</h1>
-      <form onSubmit={handleSubmit} className="form">
-        <label>
+      <form onSubmit={handleSubmit} className="flex flex-col gap-4 my-6">
+        <label className="flex flex-col gap-1 text-sm">
           Usuario
           <input
             value={username}
             onChange={(e) => setUsername(e.target.value)}
             autoComplete="username"
             required
+            className="p-2 border border-gray-300 w-full bg-white focus:outline-none focus:border-gray-600"
           />
         </label>
-        <label>
+        <label className="flex flex-col gap-1 text-sm">
           Contrasena
           <input
             type="password"
@@ -46,10 +47,13 @@ export default function LoginPage() {
             onChange={(e) => setPassword(e.target.value)}
             autoComplete="current-password"
             required
+            className="p-2 border border-gray-300 w-full bg-white focus:outline-none focus:border-gray-600"
           />
         </label>
-        {error && <p className="error">{error}</p>}
-        <button type="submit">Entrar</button>
+        {error && <p className="text-red-700 text-sm">{error}</p>}
+        <button type="submit" className="px-6 py-2 bg-gray-800 text-white cursor-pointer self-start hover:bg-gray-600">
+          Entrar
+        </button>
       </form>
       <Link href="/">Volver</Link>
     </main>

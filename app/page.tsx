@@ -2,20 +2,21 @@ import Link from 'next/link';
 
 export default function Home() {
   return (
-    <main className="page">
+    <main className="max-w-2xl mx-auto mt-8 px-4">
       <h1>Blogito</h1>
-      <p>Demo de modelos de cache en Next.js.</p>
-      <nav className="links">
-        <Link href="/ssg">
-          <strong>force-cache</strong> — datos fijos del build
+      <nav className="flex flex-col gap-3 mt-6">
+        <Link href="/ssg" className="text-gray-700 no-underline border-b border-dashed border-gray-300 pb-2 text-sm hover:text-black hover:border-gray-700">
+          <strong>force-cache</strong>
         </Link>
-        <Link href="/isr">
-          <strong>revalidate</strong> — actualiza cada 30s
+        <Link href="/isr" className="text-gray-700 no-underline border-b border-dashed border-gray-300 pb-2 text-sm hover:text-black hover:border-gray-700">
+          <strong>revalidate</strong>
         </Link>
-        <Link href="/ssr">
-          <strong>no-store</strong> — siempre fresco
+        <Link href="/ssr" className="text-gray-700 no-underline border-b border-dashed border-gray-300 pb-2 text-sm hover:text-black hover:border-gray-700">
+          <strong>no-store</strong>
         </Link>
-        <Link href="/write">Escribir entrada</Link>
+        <Link href="/entrada" className="text-gray-700 no-underline border-b border-dashed border-gray-300 pb-2 text-sm hover:text-black hover:border-gray-700">
+          Escribir entrada
+        </Link>
       </nav>
     </main>
   );
