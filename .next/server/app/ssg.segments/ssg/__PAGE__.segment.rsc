@@ -1,6 +1,0 @@
-1:"$Sreact.fragment"
-2:I[76168,["/_next/static/chunks/103xrlrto8tn3.js","/_next/static/chunks/0l4ix.e68tu2k.js","/_next/static/chunks/0198q~gw_3ce6.js"],""]
-3:I[88275,["/_next/static/chunks/103xrlrto8tn3.js","/_next/static/chunks/0l4ix.e68tu2k.js"],"OutletBoundary"]
-4:"$Sreact.suspense"
-0:{"rsc":["$","$1","c",{"children":[["$","main",null,{"className":"page","children":[["$","h1",null,{"children":"force-cache"}],["$","p",null,{"className":"subtitle","children":"Datos fijados en tiempo de build. No cambian hasta el siguiente build."}],["$","code",null,{"className":"cache-code","children":"cache: 'force-cache'"}],["$","div",null,{"className":"post-list","children":[["$","article","1",{"className":"post","children":[["$","header",null,{"children":[["$","span",null,{"className":"emoticon","children":":)"}],["$","strong",null,{"children":"alberto"}],["$","time",null,{"children":"5/5/2026, 4:00:00 a.m."}]]}],["$","p",null,{"children":"Primera entrada del blog. Esto fue escrito antes del build."}]]}]]}],["$","$L2",null,{"href":"/","children":"Volver"}]]}],[["$","script","script-0",{"src":"/_next/static/chunks/0198q~gw_3ce6.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"_InBZa5xKm96-jHGbXbDH"}
-5:null

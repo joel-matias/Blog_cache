@@ -1,6 +1,0 @@
-1:"$Sreact.fragment"
-2:I[76168,["/_next/static/chunks/103xrlrto8tn3.js","/_next/static/chunks/0l4ix.e68tu2k.js","/_next/static/chunks/0198q~gw_3ce6.js"],""]
-3:I[88275,["/_next/static/chunks/103xrlrto8tn3.js","/_next/static/chunks/0l4ix.e68tu2k.js"],"OutletBoundary"]
-4:"$Sreact.suspense"
-0:{"rsc":["$","$1","c",{"children":[["$","main",null,{"className":"page","children":[["$","h1",null,{"children":"Blogito"}],["$","p",null,{"children":"Demo de modelos de cache en Next.js."}],["$","nav",null,{"className":"links","children":[["$","$L2",null,{"href":"/ssg","children":[["$","strong",null,{"children":"force-cache"}]," — datos fijos del build"]}],["$","$L2",null,{"href":"/isr","children":[["$","strong",null,{"children":"revalidate"}]," — actualiza cada 30s"]}],["$","$L2",null,{"href":"/ssr","children":[["$","strong",null,{"children":"no-store"}]," — siempre fresco"]}],["$","$L2",null,{"href":"/write","children":"Escribir entrada"}]]}]]}],[["$","script","script-0",{"src":"/_next/static/chunks/0198q~gw_3ce6.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"_InBZa5xKm96-jHGbXbDH"}
-5:null
